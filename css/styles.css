@@ -537,6 +537,11 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   color: #fff;
 }
 
+.footer-subscribe-input:focus {
+  border-color: #31d0aa; /
+  outline: none;         /* Прибираємо стандартне обведення */
+}
+
 .footer-subscribe-btn {
   display: flex;
   justify-content: center;
@@ -545,13 +550,17 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   height: 40px;
 }
 
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background-color: #31d0aa;
+
+}
+
 .footer-subscribe-icon {
   margin-left: 16px;
   fill: #ffffff;
 }
 /* #endregion */
-
-/* #region Backdrop & Modal */
 
 /* #region Backdrop & Modal */
 
@@ -580,6 +589,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: relative;/* Додаємо контекст для кнопки-хрестика */
+
   width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
